@@ -5,7 +5,19 @@ import 'src/screens/favourites.dart';
 import 'src/screens/settings.dart';
 import 'src/utils/theme_data.dart';
 
-void main() => runApp(const App());
+import 'package:shared_preferences/shared_preferences.dart';
+import 'src/utils/shared_pref.dart';
+
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(App());
+}
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
