@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="by.gregory.hrodna_control">
    <application
-        android:label="hrodna_control"
+        android:label="Контроль.Гродно!"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
