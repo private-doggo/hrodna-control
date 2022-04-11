@@ -17,7 +17,7 @@ class _SettingsState extends State<Settings> {
         title: Text(widget.title),
       ),
       body: const Center(
-        child: Text('Настроечки'),
+        child: Text('В разработке'),
       ),
     );
   }
